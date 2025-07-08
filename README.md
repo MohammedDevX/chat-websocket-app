@@ -1,25 +1,25 @@
-# 💬 Chat App en Temps Réel
+# 💬 Real-Time Chat App
 
-Application de messagerie instantanée entre deux utilisateurs, développée avec **WebSocket**, **PHP natif** et **MySQL**. Les messages sont échangés instantanément sans rechargement et sauvegardés en base de données.
+Instant messaging application between two users, developed with **WebSocket**, **native PHP** and **MySQL**. Messages are exchanged instantly without reloading and saved in a database.
 
 ## 🛠️ Technologies
 
-- **PHP natif** (frontend + serveur WebSocket)
-- **MySQL** pour stocker les échanges
+- **Native PHP** (frontend + WebSocket server)
+- **MySQL** to store exchanges
 - **Ratchet** (librairie WebSocket pour PHP)
-- **JavaScript** pour la logique côté client
-- **HTML/CSS** pour l’interface du chat
+- **JavaScript** for client-side logic
+- **HTML/CSS** for the chat interface
 
-## 🚀 Lancer l'application
+## 🚀 Launch the application
 
-1. Cloner ce dépôt :
+1. Clone this repository:
    ```bash
    git clone https://github.com/MohammedDevX/chat-websocket-app.git
    cd chat-websocket-app
-2. Configurer la base MySQL (exécuter le script fourni ou créer la table messages).
-3. Démarrer le serveur WebSocket :
+2. Configure the MySQL database (run the provided script or create the messages table).
+3. Start the WebSocket server:
     ```bash
     cd server
     php server.php
-4. Ouvrir chat.php dans deux onglets navigateurs distincts (en local, via XAMPP/WAMP) en précisant un ?id= différent pour chaque.
-5. Tester l’envoi/réception de messages en temps réel – pas de rafraîchissement nécessaire.
+4. Open chat.php in two separate browser tabs (locally, via XAMPP/WAMP) specifying a different ?id= for each.
+5. Test sending/receiving messages in real time – no refresh required.
