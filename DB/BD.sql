@@ -1,0 +1,20 @@
+CREATE DATABASE chat;
+
+USE chat;
+
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(255) NOT NULL,
+  user_name VARCHAR(255) NOT NULL,
+  pass TEXT NOT NULL
+);
+
+CREATE TABLE messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  message TEXT NOT NULL,
+  sender_id INT NOT NULL,
+  received_id INT DEFAULT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (sender_id) REFERENCES user(id),
+  FOREIGN KEY (received_id) REFERENCES user(id)
+);
