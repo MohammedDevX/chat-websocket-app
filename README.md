@@ -10,32 +10,18 @@ Application de messagerie instantanée entre deux utilisateurs, développée ave
 - **JavaScript** pour la logique côté client
 - **HTML/CSS** pour l’interface du chat
 
-## 📁 Structure
-
-chat-websocket-app/
-├── client/ ← Interface PHP/JS/CSS côté utilisateur
-├── server/ ← Serveur WebSocket (Ratchet + PHP)
-└── README.md ← Ce fichier
-
-bash
-Copier
-Modifier
-
 ## 🚀 Lancer l'application
 
 1. Cloner ce dépôt :
    ```bash
    git clone https://github.com/MohammedDevX/chat-websocket-app.git
    cd chat-websocket-app
-Configurer la base MySQL (exécuter le script fourni ou créer la table messages).
+2. Configurer la base MySQL (exécuter le script fourni ou créer la table messages).
 
-Démarrer le serveur WebSocket :
+3. Démarrer le serveur WebSocket :
 
-bash
-Copier
-Modifier
-cd server
-php server.php
-Ouvrir chat.php dans deux onglets navigateurs distincts (en local, via XAMPP/WAMP) en précisant un ?id= différent pour chaque.
+    cd server
+    php server.php
+4. Ouvrir chat.php dans deux onglets navigateurs distincts (en local, via XAMPP/WAMP) en précisant un ?id= différent pour chaque.
 
-Tester l’envoi/réception de messages en temps réel – pas de rafraîchissement nécessaire.
+5. Tester l’envoi/réception de messages en temps réel – pas de rafraîchissement nécessaire.
