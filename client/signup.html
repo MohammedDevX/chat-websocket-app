@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Inscription</h2>
+        <form action="signup.php" method="post">
+            <input type="text" name="nom" placeholder="Nom complet" required>
+            <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" name="pass" placeholder="Mot de passe" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p style="margin-top: 15px;">
+            Déjà inscrit ? <a href="login.html" style="color: #bbb;">Se connecter</a>
+        </p>
+    </div>
+</body>
+</html>
